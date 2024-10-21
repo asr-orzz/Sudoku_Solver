@@ -26,7 +26,7 @@ bool check(int ch, int row, int col) {
     }
 
     // Check 3x3 subgrid
-    int str = (row / CellSize) * CellSize;
+    int str = (row / CellSize) * CellSize;  // this will give me the leftmost upermost location of a cell
     int stc = (col / CellSize) * CellSize;
     for (int dx = 0; dx < CellSize; dx++) {
         for (int dy = 0; dy < CellSize; dy++) {
